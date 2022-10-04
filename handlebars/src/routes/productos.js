@@ -5,6 +5,9 @@ const routerProductos = Router();
 const Contenedor = require('../class/main');
 const contenedor = new Contenedor('productos.txt');
 
+
+
+
 /* ---------- GET ------------ */
 
 // Obtener todos los productos
@@ -30,14 +33,13 @@ routerProductos.get('/:id', async (req, res) => {
 })
 
 
-
 /* ---------- POST ------------ */
 
 // Agregar un producto
 routerProductos.post('/', async (req, res) => {
 
     await contenedor.save(req.body, true);
-    res.json(req.body)
+    res.redirect('/productos');
 })
 
 
