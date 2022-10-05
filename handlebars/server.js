@@ -6,9 +6,6 @@ const routerProductos = require('./src/routes/productos');
 const Contenedor = require('./src/class/main');
 const contenedor = new Contenedor('productos.txt');
 
-// const Contenedor = require('../class/main');
-// const contenedor = new Contenedor('productos.txt');
-
 const handlebars = require('express-handlebars');
 
 

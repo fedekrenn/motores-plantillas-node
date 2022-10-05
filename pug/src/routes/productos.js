@@ -37,7 +37,7 @@ routerProductos.get('/:id', async (req, res) => {
 routerProductos.post('/', async (req, res) => {
 
     await contenedor.save(req.body, true);
-    res.json(req.body)
+    res.redirect('/productos');
 })
 
 

@@ -1,0 +1,19 @@
+extends layouts/index.pug
+
+block vista
+    h1='Carga de Productos'
+    if productos
+        table
+            tr
+                th='Nombre'
+                th='Precio'
+                th='Foto'
+                each producto in productos
+                    tr
+                        td=producto.title
+                        td='$ '+producto.price
+                        td
+                            img(src=producto.thumbnail alt="icono")
+    else
+        h2='No hay productos!'
+    a(class="btn" href="/")='Cargar nuevo producto'
