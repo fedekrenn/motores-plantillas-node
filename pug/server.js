@@ -19,8 +19,6 @@ app.set('views', './views');
 app.set('view engine', 'pug');
 
 // Ruta de PUG
-
-
 app.get('/productos', async (req, res) => {
     
     const productos = await contenedor.getAll();
@@ -29,6 +27,7 @@ app.get('/productos', async (req, res) => {
         productos: productos
     });
 });
+
 
 /* --------------------------------- */
 
