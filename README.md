@@ -9,19 +9,19 @@ para un back en Node + Express
 ```
 git clone https://github.com/fedekrenn/motores-plantillas-node.git
 ```
-3. Navegar hasta la carpeta de la vista que deseas ejecutar:<br>
+2. Navegar hasta la carpeta de la vista que deseas ejecutar:<br>
 
 `cd ejs`, `cd handlebars` o `cd pug`
 
-5. Instalar las dependencias: 
+3. Instalar las dependencias: 
 ```
 npm install
 ```
-7. Inicializar el servidor 
+4. Inicializar el servidor 
 ```
 npm run start
 ```
-9. Por defecto el puerto configurado es el 8080, por lo que se debe acceder a ese puerto mediante localhost
+5. Por defecto el puerto configurado es el 8080, por lo que se debe acceder a ese puerto mediante localhost
 
 <br>
 
